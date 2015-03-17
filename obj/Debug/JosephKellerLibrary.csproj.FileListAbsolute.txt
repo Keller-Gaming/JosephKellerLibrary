@@ -1,0 +1,6 @@
+c:\users\tammi\documents\visual studio 2013\Projects\JosephKellerLibrary\JosephKellerLibrary\bin\Debug\JosephKellerLibrary.dll.config
+c:\users\tammi\documents\visual studio 2013\Projects\JosephKellerLibrary\JosephKellerLibrary\bin\Debug\JosephKellerLibrary.dll
+c:\users\tammi\documents\visual studio 2013\Projects\JosephKellerLibrary\JosephKellerLibrary\bin\Debug\JosephKellerLibrary.pdb
+c:\users\tammi\documents\visual studio 2013\Projects\JosephKellerLibrary\JosephKellerLibrary\obj\Debug\JosephKellerLibrary.csprojResolveAssemblyReference.cache
+c:\users\tammi\documents\visual studio 2013\Projects\JosephKellerLibrary\JosephKellerLibrary\obj\Debug\JosephKellerLibrary.dll
+c:\users\tammi\documents\visual studio 2013\Projects\JosephKellerLibrary\JosephKellerLibrary\obj\Debug\JosephKellerLibrary.pdb

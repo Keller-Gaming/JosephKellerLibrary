@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IniFile</name>
+    </assembly>
+    <members>
+        <member name="T:JosephKellerLibrary.IniFile">
+            <summary>
+            Create a New INI file to store or load data
+            </summary>
+        </member>
+        <member name="F:JosephKellerLibrary.IniFile.path">
+            <summary>
+            The Path of the INI file.
+            </summary>
+        </member>
+        <member name="F:JosephKellerLibrary.IniFile.capacity">
+            <summary>
+            The Capacity of the INI file reader.
+            </summary>
+        </member>
+        <member name="M:JosephKellerLibrary.IniFile.#ctor(System.String)">
+            <summary>
+            INIFile Constructor.
+            </summary>
+            <PARAM name="INIPath">The path of the INI file.</PARAM>
+        </member>
+        <member name="M:JosephKellerLibrary.IniFile.#ctor(System.String,System.Int32)">
+            <summary>
+            INIFile Constructor.
+            </summary>
+            <PARAM name="INIPath">The path of the INI file.</PARAM>
+            <PARAM name="INIcapacity">The maximum number of characters to be read.</PARAM>
+        </member>
+        <member name="M:JosephKellerLibrary.IniFile.IniWriteValue(System.String,System.String,System.String)">
+            <summary>
+            Write Data to the INI File
+            </summary>
+            <PARAM name="Section">Section name</PARAM>
+            <PARAM name="Key">Key Name</PARAM>
+            <PARAM name="Value">Value to write</PARAM>
+        </member>
+        <member name="M:JosephKellerLibrary.IniFile.IniReadValue(System.String,System.String)">
+            <summary>
+            Read Data Value From the INI File
+            </summary>
+            <PARAM name="Section">Section name</PARAM>
+            <PARAM name="Key">Key Name</PARAM>
+            <returns>Returns the read data in string format.</returns>
+        </member>
+    </members>
+</doc>

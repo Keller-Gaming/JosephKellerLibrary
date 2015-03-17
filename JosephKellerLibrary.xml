@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JosephKellerLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:JosephKellerLibrary.JosephKellerLibrary">
+            <summary>
+            Joseph Keller's Commonly used and short-handeded functions.</summary>
+        </member>
+        <member name="M:JosephKellerLibrary.JosephKellerLibrary.sysPath">
+            <summary>
+            Returns the path the EXE is located in.</summary>
+        </member>
+    </members>
+</doc>
