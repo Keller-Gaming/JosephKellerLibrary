@@ -1,0 +1,1 @@
+csc /target:library /platform:x86 /appconfig:App.config /out:JosephKellerLibrary.dll Properties\AssemblyInfo.cs JosephKellerLibrary.cs IniFile.cs
