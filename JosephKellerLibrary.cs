@@ -2,7 +2,11 @@
 // compile with: /doc:JosephKellerLibrary.xml
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -1160,6 +1164,36 @@ namespace JosephKellerLibrary
         public void copyFile(string var1, string var2, bool var3)
         {
             System.IO.File.Copy(var1, var2, var3);
+        }
+
+        /// <summary>
+        /// Gets the version of the application.
+        /// </summary>
+        /// <returns>Application Version</returns>
+        public string getVersion()
+        {
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
+            return fileVersionInfo.ProductVersion;
+        }
+
+        /// <summary>
+        /// Gets the Public IP address of the user
+        /// </summary>
+        /// <returns>User's Public IP</returns>
+        string getMyIp()
+        {
+            IPHostEntry host;
+            string localIP = "?";
+            host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    localIP = ip.ToString();
+                }
+            }
+            return localIP;
         }
         #endregion
     }

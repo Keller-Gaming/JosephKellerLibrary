@@ -12,5 +12,24 @@
             <summary>
             Returns the path the EXE is located in.</summary>
         </member>
+        <member name="M:JosephKellerLibrary.JosephKellerLibrary.copyFile(System.String,System.String,System.Boolean)">
+            <summary>
+            Copys a file.</summary>
+            <param name="var1">Source Path</param>
+            <param name="var2">Destination Path</param>
+            <param name="var3">Wether or not to overwrite the Destination Path</param>
+        </member>
+        <member name="M:JosephKellerLibrary.JosephKellerLibrary.getVersion">
+            <summary>
+            Gets the version of the application.
+            </summary>
+            <returns>Application Version</returns>
+        </member>
+        <member name="M:JosephKellerLibrary.JosephKellerLibrary.getMyIp">
+            <summary>
+            Gets the Public IP address of the user
+            </summary>
+            <returns>User's Public IP</returns>
+        </member>
     </members>
 </doc>
