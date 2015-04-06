@@ -16,76 +16,174 @@ namespace JosephKellerLibrary
     /// Joseph Keller's Commonly used and short-handeded functions.</summary>
     public class JosephKellerLibrary
     {
+        #region Constants and Variables
+        /// <summary>
+        /// Int32 I, used in JKL's for loops.
+        /// </summary>
+        Int32 I;
+        #endregion
         #region Conversions
         #region To boolean
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(bool i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(byte i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(char i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(DateTime i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(decimal i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(double i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(float i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(int i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(long i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(object i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(sbyte i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(short i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(string i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(uint i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(ulong i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(ushort i)
         {
             return Convert.ToBoolean(i);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <param name="provider">An IFormatProvider to foramt the data, if needed.</param>
+        /// <returns>Boolean form of inputed data, formated by the IFormatProvider.</returns>
         public Boolean cbol(object i, IFormatProvider provider)
         {
             return Convert.ToBoolean(i, provider);
         }
+        /// <summary>
+        /// Converts the input to a Boolean
+        /// </summary>
+        /// <param name="i">Input Data</param>
+        /// <param name="provider">An IFormatProvider to foramt the data, if needed.</param>
+        /// <returns>Boolean form of inputed data.</returns>
         public Boolean cbol(string i, IFormatProvider provider)
         {
             return Convert.ToBoolean(i, provider);
@@ -1155,7 +1253,6 @@ namespace JosephKellerLibrary
         {
             return System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
         }
-
         /// <summary>
         /// Copys a file.</summary>
         /// <param name="var1">Source Path</param>
@@ -1165,18 +1262,25 @@ namespace JosephKellerLibrary
         {
             System.IO.File.Copy(var1, var2, var3);
         }
-
         /// <summary>
-        /// Gets the version of the application.
+        /// Gets the version of the JKL.
         /// </summary>
-        /// <returns>Application Version</returns>
-        public string getVersion()
+        /// <returns>JKL Version</returns>
+        public string getJKLVersion()
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
             FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
             return fileVersionInfo.ProductVersion;
         }
-
+        /// <summary>
+        /// Included for Legacy Purposes
+        /// </summary>
+        /// <returns>JKL Version</returns>
+        [System.Obsolete("use getJKLVersion()")]
+        public string getVersion()
+        {
+            return getJKLVersion();
+        }
         /// <summary>
         /// Gets the Public IP address of the user
         /// </summary>
@@ -1195,6 +1299,56 @@ namespace JosephKellerLibrary
             }
             return localIP;
         }
+        /// <summary>
+        /// Compares the inputed version strings and checks if the first is greater than or equal to the second
+        /// </summary>
+        /// <param name="greaterVersion">Version string to check if >= lesserString </param>
+        /// <param name="lesserVersion">Lesser, or current, version</param>
+        /// <returns>If greaterVersion >= lesserVersion.</returns>
+        Boolean isVersionGreater(string greaterVersion, string lesserVersion)
+        {
+            return isVersionGreater(greaterVersion, lesserVersion, 4);
+        }
+        /// <summary>
+        /// Compares the inputed version strings and checks if the first is greater than or equal to the second
+        /// </summary>
+        /// <param name="greaterVersion">Version string to check if >= lesserString </param>
+        /// <param name="lesserVersion">Lesser, or current, version</param>
+        /// <param name="versionSections">How many sectons in the version string. ("1.0.0.0" would be 4)</param>
+        /// <returns>If greaterVersion >= lesserVersion.</returns>
+        Boolean isVersionGreater(string greaterVersion, string lesserVersion, int versionSections)
+        {
+            char[] seperator = new char[1] { '.' };
+            string[] greaterVersionSplit = new string[versionSections];
+            string[] lesserVersionSplit = new string[versionSections];
+            Int32[] greaterVersionInt = new Int32[versionSections];
+            Int32[] lesserVersionInt = new Int32[versionSections];
+            greaterVersionSplit = greaterVersion.Split(seperator);
+            lesserVersionSplit = lesserVersion.Split(seperator);
+            for (I = 0; I < versionSections; I++)
+            {
+                greaterVersionInt[I] = cint32(greaterVersionSplit[I]);
+                lesserVersionInt[I] = cint32(lesserVersionSplit[I]);
+            }
+            for (I = 0; I < versionSections; I++)
+            {
+                if (greaterVersionInt[I] >= lesserVersionInt[I])
+                {
+                    if (I == versionSections)
+                    {
+                        return true;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            return false;
+        }
+
+        
         #endregion
     }
 }
